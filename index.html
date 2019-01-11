@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="tabIcon.jpg" />
+    <title>Memory Game</title>
+    <meta name="description" content="" />
+    <link
+      rel="stylesheet prefetch"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet prefetch"
+      href="https://fonts.googleapis.com/css?family=Coda"
+    />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header><h1>Matching Memory Game</h1></header>
+      <section class="score-panel">
+        <span class="clock">0.00 &nbsp;&nbsp;</span>
+        <ul class="stars">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+
+        <span class="moves">0</span> Moves
+
+        <div class="restart"><i class="fa fa-repeat"></i></div>
+      </section>
+
+      <ul class="deck">
+        <li class="card"><i class="fa fa-diamond"></i></li>
+        <li class="card"><i class="fa fa-paper-plane-o"></i></li>
+        <li class="card"><i class="fa fa-anchor"></i></li>
+        <li class="card"><i class="fa fa-bolt"></i></li>
+        <li class="card"><i class="fa fa-cube"></i></li>
+        <li class="card"><i class="fa fa-anchor"></i></li>
+        <li class="card"><i class="fa fa-leaf"></i></li>
+        <li class="card"><i class="fa fa-bicycle"></i></li>
+        <li class="card"><i class="fa fa-diamond"></i></li>
+        <li class="card"><i class="fa fa-bomb"></i></li>
+        <li class="card"><i class="fa fa-leaf"></i></li>
+        <li class="card"><i class="fa fa-bomb"></i></li>
+        <li class="card"><i class="fa fa-bolt"></i></li>
+        <li class="card"><i class="fa fa-bicycle"></i></li>
+        <li class="card"><i class="fa fa-paper-plane-o"></i></li>
+        <li class="card"><i class="fa fa-cube"></i></li>
+      </ul>
+    </div>
+    <div class="modal_div hide">
+      <div class="popUp_body">
+        <div class="popUp_head">
+          <h1 class="popUp_Title">Score Board</h1>
+          <span class="popUp_close">X</span>
+        </div>
+        <div class="popUp_scores">
+          <span class="popUp_message"></span>
+          <span class="total_time">Total Time:</span>
+          <span class="total_stars">Stars:</span>
+          <span class="total_moves">Moves:</span>
+        </div>
+        <div class="popUp_bottom">
+          <button class="popUp_button button_cancel">Cancel</button>
+          <button class="popUp_button button_replay">Replay</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
